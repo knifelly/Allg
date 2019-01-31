@@ -1,0 +1,124 @@
+/*全局变量*/
+$main-color:#5787d5;
+$font-color:#9ea7ae;
+$nomorl: 'SourceHanSansCN-Normal';
+
+/*elementUI 样式覆盖*/
+.el-header{
+  padding: 0px;
+}
+.el-menu-item i{
+  color:#ffffff;
+}
+.el-form-item{
+  font-size:0px;
+}
+.el-form-item__label{
+  padding-right:0.25rem;
+  font-size:0.22rem;
+  color:$font-color;
+}
+.el-input__inner{
+  background-color: #f2f2f2;
+  height: 0.44rem;
+  line-height: 0.44rem;
+  border:none;
+}
+.el-button{
+  padding:0.1rem 0.4rem;
+  border-radius: 0.4rem;
+}
+
+/*基础样式*/
+html,body{
+  height:100%;
+  font-family: SourceHanSansCN-Regular;
+  color:#505155;
+}
+ul,li{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+a{
+  text-decoration: none;
+}
+body{
+  margin:0px;
+  padding:0px;
+  background-color:#ffffff;
+}
+/*全局样式*/
+.main-contant{
+  height:100%;
+  .sub-title{
+    font-size:0.26rem;
+    margin-bottom:0.24rem;
+  }
+  .contant-opt{
+    height:89%;
+    background:#ffffff;
+    border-radius: 0.1rem;
+    padding:0.2rem;
+  }
+}
+.data-opt{
+  font-size:0.26rem;
+  margin-bottom:0.2rem;
+  .data{
+    display:inline-block;
+    span{
+      color:lighten($main-color, 7%);
+      padding:0rem 0.05rem;
+    }
+  }
+  .opt{
+    cursor: pointer;
+    float:right;
+    .add{
+      color:#0fb99f;
+    }
+    .edit{
+      color:#3191e1;
+    }
+    .del{
+      color:#fa4c41;
+    }
+    .reset{
+      color:#5680c3;
+    }
+    li{
+      display:inline-block;
+      font-size:0.22rem;
+      padding-left:0.5rem;
+      i{
+        padding-right:0.1rem;
+      }
+    }
+  }
+}
+.data-list{
+  font-size:0.22rem;
+  width:100%;
+  font-family: $nomorl;
+  th{
+    font-size:0.2rem;
+    color:#c3c6ce;
+    background:#f8f8f8;
+    padding:0.16rem;
+    text-align:left;
+  }
+  td{
+    padding:0.16rem;
+    border-bottom:1px solid #e5e5e5;
+  }
+}
+.pagination{
+  margin-top:0.3rem;
+  text-align: right;
+  .el-pagination{
+    font-size:0px;
+    font-weight: 400;
+  }
+}
+
